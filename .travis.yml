@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: uzX6WnIbtWlbtGrpxy+XHoCt2K16EfVPvqR97edf8gDl/Gf+op8gAHdJlr/r5NdGEWeQetyeuWvn9xir6FnDq4gDjHd7GqA7wUiHak2SqwbUA9Xd3e7xBMMca8qkLzODIXnqwvqqE4ElFOoDOEIJvkTMrZOETlsHpbbxCNO2rL/w7n4/7wizSgDxyxaxZvelUQs/1a94qZXiJ3NvWlw8Tpj5gzrWM+ofkx0Nx2nngR7qQWZOajEsPnLANjD2N9LupiYCN6HUPgqD+0gsK7wjT9BkVo80elwHLzY/rFUm8vQV6+5XX29y8qVJ2ryH29EDGDF3mQO6S5McNjrpyRDS4XbBPXaZxIr6wjJGfQXf5F69efqFkCQpcUnQhoyUDovRvcJkWZMDSEX+OgXIby1oJipmY7nUhB6jIKYFBZwi/Lq5YQ3nJB33XlfISvfFlabOsTACzSlt2UtpMhi2PcaeCO+p6fd4sFjsjhqFDZuiyEmrRSaGbEjveRlwEVOuEFZ0O96fPiKS4QuEbGJTzunb6HCF69kz7Qhi7aV95biWAdsGGpdpewqkIaYLZq8g4J8EggrRXaeqeOrPBaXFIIlfx0X8/JlVfzuWYZk36BQjAMcOUkOEYu/COJe410dMNO5FSEAVm3tgO8JsVfYiVUEnumg0o6bmy5gTQlCLYucm4nI=
+  app: react-testing
+  on:
+    repo: escottalexander/react-testing
