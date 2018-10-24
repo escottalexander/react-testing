@@ -5,4 +5,10 @@ cache:
   - node_modules
 env:
 - CI=true
-
+deploy:
+  provider: heroku
+  api_key:
+    secure: dYZzK2x+aqgWtsN2WX6zQqvGkvXvFqgKXiKJrn2bnB21eWDm9npH77oZVE4MGa116MwLho9ziE0SYli1NdGCNMr5NOfWVfJSVB5cHczUQ3tVgf29PZd9nzPPQrCCrTWMjYlVSFlNWuTbQ6vt9GA7Y9dA2Egq8BfR1pw+DPUK+mTzIiAgkjv4tBcqhU8B0NjvHm2eXTHQaIEUrLMKtYBX9fijL3PcJuqx2gmVpv/lq18hbyV0ptgyFw8fP4qF/rZz8zNYRgn23uaWydN56M+dNmnbv8f8D72unBJbYluZaLveSzQZFJhZw73SJ00aj6rXNoGTwNpuaQcftZpECNF5JmyIrdCL/sPZsmPnVaJv9jCiYEy9rON83meTDxO22kFG7F7RV72rwyJ26lWpnqsM5WV7aiHu6g2rmUX2ZW1e5qK0p5ldhhMe0xtSZFEUYf70UTsLPlUn59NEZPsbR7ulF7BSBwuWFu5DeHJ3fgfXJKSRHnuZoJRYn2rcUmAENNnd7AdQsgCDVDAzfOQRnI1T/4PsGzY2hEWoWr7dJw4nBzMGqai9gXrd/rgPZ+KAafUMbYRpOmJPuGWvu15+MklH0cyLmdUOeDpht5EAPk/zmETI0EMyLBlYnFwN6ZD7tb86Dj7wFQu0l825c7JlCjL/lrwHFMtaYB6MnK5IrkathWg=
+  app: cryptic-scrubland-30677
+  on:
+    repo: escottalexander/react-testing
