@@ -1,7 +1,7 @@
 import React from 'react';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import GuessCount from './guess-count';
+import { GuessCount } from './guess-count';
 Enzyme.configure({ adapter: new Adapter() })
 const mount = Enzyme.mount;
 const shallow = Enzyme.shallow;

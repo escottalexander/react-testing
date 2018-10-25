@@ -1,7 +1,7 @@
 import React from 'react';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import AuralStatus from './aural-status';
+import { AuralStatus } from './aural-status';
 Enzyme.configure({ adapter: new Adapter() })
 const mount = Enzyme.mount;
 const shallow = Enzyme.shallow;

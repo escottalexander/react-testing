@@ -11,16 +11,4 @@ describe('<Game />', () => {
   it('Renders without crashing', () => {
     shallow(<Game />);
   });
-
-  it('New Game', () => {
-    const wrapper = shallow(<Game />);
-    wrapper.setState({
-      guesses: [1, 25, 37, 49, 53],
-      feedback: "Wrong Answer",
-      correctAnswer: 99
-    })
-    expect(wrapper.state('guesses')).toEqual([1, 25, 37, 49, 53]);
-    wrapper.instance().restartGame();
-    expect(wrapper.state('guesses')).toEqual([]);
-  });
 });
